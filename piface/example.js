@@ -36,7 +36,7 @@ function watchInputs() {
 		if(old_state != new_state)
 		{
 			states['s' + i] = new_state;
-			//console.log('input# ' + i + ' : ' + states['s' + i]);
+			console.log('input# ' + i + ' : ' + states['s' + i]);
 
 			pfio.digital_write(i, new_state);
 		}
